@@ -1,0 +1,11 @@
+--- src/mesa/drivers/dri/sis/sis_context.h_orig	2010-11-15 08:54:00.499406000 +0000
++++ src/mesa/drivers/dri/sis/sis_context.h	2010-11-15 08:55:33.139406000 +0000
+@@ -400,7 +400,7 @@
+ #define MMIO_READ(reg) *(volatile GLint *)(smesa->IOBase + (reg))
+ #define MMIO_READf(reg) *(volatile GLfloat *)(smesa->IOBase + (reg))
+ 
+-#if defined(__i386__) || defined(__x86_64__)
++#if defined(__i386__) || defined(__x86_64__) || defined(__ARM__) || defined(__arm__)
+ #define MMIO_WMB()	__asm __volatile("" : : : "memory")
+ #elif defined(__ia64__)
+ #define MMIO_WMB()	__asm __volatile("mf" : : : "memory")
