@@ -1,33 +1,28 @@
 # Description: Mesa 3D Graphics Library
 # URL: http://www.mesa3d.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-dri2proto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt, xorg-libxdamage, expat, libxml2-python
+# Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-dri2proto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt, xorg-libxdamage, xorg-libpciaccess, expat, talloc, libxml2-python
 
 name=mesa3d
-version=7.10.2
-release=1
-source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2 \
-        Makefile glxgears.c glxinfo.c $name-$version-arm.diff)
+version=8.0.4
+release=2
+source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2
+  mesa-8.0.3-llvm-3.1-fixes.patch)
 
 build() {
   cd Mesa-$version
-  patch -p0 -i $SRC/$name-$version-arm.diff
-  mkdir -p progs/xdemos
-  mv $SRC/{Makefile,glx{gears,info}.c} progs/xdemos
+
+  patch -p 1 -i $SRC/mesa-8.0.3-llvm-3.1-fixes.patch
 
   ./configure --prefix=/usr \
-              --with-dri-driverdir=/usr/lib/dri \
               --with-driver=dri \
               --with-dri-drivers=swrast \
-              --enable-glu \
-              --disable-glw \
-              --disable-gallium 
+              --with-gallium-drivers=svga \
+              --enable-gles1 \
+              --enable-gles2 \
+              --enable-glu
 
   make
-  make -C progs/xdemos
   make DESTDIR=$PKG install
-
-  install -d $PKG/usr/bin
-  install -m 755 progs/xdemos/glx{gears,info} $PKG/usr/bin
 }
