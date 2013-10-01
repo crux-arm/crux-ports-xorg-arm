@@ -5,17 +5,14 @@
 # Depends on: libpthread-stubs xorg-libpciaccess 
 
 name=libdrm
-version=2.4.41
+version=2.4.46
 release=1
 source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2)
 
 build() {
-    cd $name-$version
-
-    sed -i '/^\tman\/Makefile/d' configure.ac
-    autoconf
-
-    ./configure --prefix=/usr --mandir=/usr/man
-    make
-    make DESTDIR=$PKG install
+  cd $name-$version
+  sed -i "s/drm\/drm.h/drm.h/" include/drm/qxl_drm.h
+  ./configure --prefix=/usr --mandir=/usr/man
+  make
+  make DESTDIR=$PKG install
 }
