@@ -1,4 +1,6 @@
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/etc/
+-rw-r--r--	root/root	usr/etc/drirc
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/EGL/
 -rw-r--r--	root/root	usr/include/EGL/egl.h
@@ -15,7 +17,6 @@ drwxr-xr-x	root/root	usr/include/GL/
 drwxr-xr-x	root/root	usr/include/GL/internal/
 -rw-r--r--	root/root	usr/include/GL/internal/dri_interface.h
 -rw-r--r--	root/root	usr/include/GL/osmesa.h
--rw-r--r--	root/root	usr/include/GL/vms_x_fix.h
 -rw-r--r--	root/root	usr/include/GL/wglext.h
 -rw-r--r--	root/root	usr/include/GL/wmesa.h
 drwxr-xr-x	root/root	usr/include/GLES/
@@ -27,12 +28,17 @@ drwxr-xr-x	root/root	usr/include/GLES2/
 -rw-r--r--	root/root	usr/include/GLES2/gl2.h
 -rw-r--r--	root/root	usr/include/GLES2/gl2ext.h
 -rw-r--r--	root/root	usr/include/GLES2/gl2platform.h
+drwxr-xr-x	root/root	usr/include/GLES3/
+-rw-r--r--	root/root	usr/include/GLES3/gl3.h
+-rw-r--r--	root/root	usr/include/GLES3/gl3ext.h
+-rw-r--r--	root/root	usr/include/GLES3/gl3platform.h
 drwxr-xr-x	root/root	usr/include/KHR/
 -rw-r--r--	root/root	usr/include/KHR/khrplatform.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/swrast_dri.la
 -rwxr-xr-x	root/root	usr/lib/dri/swrast_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/vmwgfx_dri.la
 -rwxr-xr-x	root/root	usr/lib/dri/vmwgfx_dri.so
 -rwxr-xr-x	root/root	usr/lib/libEGL.la
 lrwxrwxrwx	root/root	usr/lib/libEGL.so -> libEGL.so.1.0.0
@@ -50,10 +56,10 @@ lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so.1 -> libGLESv1_CM.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libGLESv2.so -> libGLESv2.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2 -> libGLESv2.so.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libGLESv2.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/libdricore9.0.2.la
-lrwxrwxrwx	root/root	usr/lib/libdricore9.0.2.so -> libdricore9.0.2.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libdricore9.0.2.so.1 -> libdricore9.0.2.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libdricore9.0.2.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libdricore9.1.6.la
+lrwxrwxrwx	root/root	usr/lib/libdricore9.1.6.so -> libdricore9.1.6.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libdricore9.1.6.so.1 -> libdricore9.1.6.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libdricore9.1.6.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libglapi.la
 lrwxrwxrwx	root/root	usr/lib/libglapi.so -> libglapi.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libglapi.so.0 -> libglapi.so.0.0.0
