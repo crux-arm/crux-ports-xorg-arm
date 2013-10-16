@@ -11,8 +11,16 @@ source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2)
 
 build() {
   cd $name-$version
+
   sed -i "s/drm\/drm.h/drm.h/" include/drm/qxl_drm.h
-  ./configure --prefix=/usr --mandir=/usr/man --disable-manpages
+
+  ./configure --prefix=/usr \
+              --mandir=/usr/man \
+              --disable-manpages \
+              --enable-omap-experimental-api \
+              --enable-exynos-experimental-api \
+              --enable-freedreno-experimental-api
+
   make
   make DESTDIR=$PKG install
 }
