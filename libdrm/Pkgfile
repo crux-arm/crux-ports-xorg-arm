@@ -5,14 +5,14 @@
 # Depends on: libpthread-stubs xorg-libpciaccess 
 
 name=libdrm
-version=2.4.47
-release=2
-source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2)
+version=2.4.49
+release=1
+source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2
+        drm-header-path.patch)
 
 build() {
   cd $name-$version
-
-  sed -i "s/drm\/drm.h/drm.h/" include/drm/qxl_drm.h
+  patch -p 1 -i $SRC/drm-header-path.patch
 
   ./configure --prefix=/usr \
               --mandir=/usr/man \
