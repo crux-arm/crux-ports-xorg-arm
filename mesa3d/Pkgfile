@@ -5,7 +5,7 @@
 # Depends on: expat libdrm libxml2-python talloc xorg-dri2proto xorg-glproto xorg-libxdamage xorg-libxt xorg-libxvmc xorg-libxxf86vm xorg-makedepend
 
 name=mesa3d
-version=9.2.5
+version=10.4.4
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
@@ -14,10 +14,19 @@ build() {
 
   autoreconf --install --symlink
   ./configure --prefix=/usr \
-              --with-dri-drivers=swrast \
-              --with-gallium-drivers=svga \
+              --sysconfdir=/etc \
+              --enable-gallium-llvm \
+              --enable-gbm \
               --enable-gles1 \
-              --enable-gles2 
+              --enable-gles2 \
+              --enable-glx-tls \
+              --enable-osmesa \
+              --enable-texture-float \
+              --enable-xa \
+              --enable-llvm-shared-libs \
+              --disable-dependency-tracking \
+              --with-dri-drivers=swrast \
+              --with-gallium-drivers=svga
 
   make
   make DESTDIR=$PKG install
