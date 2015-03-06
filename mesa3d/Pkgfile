@@ -5,8 +5,8 @@
 # Depends on: expat libdrm libxml2-python talloc xorg-dri2proto xorg-glproto xorg-libxdamage xorg-libxt xorg-libxvmc xorg-libxxf86vm xorg-makedepend
 
 name=mesa3d
-version=10.4.4
-release=1
+version=10.4.5
+release=2
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
 build() {
@@ -15,7 +15,7 @@ build() {
   autoreconf --install --symlink
   ./configure --prefix=/usr \
               --sysconfdir=/etc \
-              --enable-gallium-llvm \
+              --disable-gallium-llvm \
               --enable-gbm \
               --enable-gles1 \
               --enable-gles2 \
