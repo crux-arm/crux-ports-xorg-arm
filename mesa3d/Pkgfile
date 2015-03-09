@@ -28,7 +28,8 @@ build() {
               --enable-llvm-shared-libs \
               --disable-dependency-tracking \
               --with-dri-drivers=swrast \
-              --with-gallium-drivers=svga
+              --with-gallium-drivers=swrast,svga,freedreno \
+              --with-egl-platforms=x11,drm,fbdev
 
   make
   make DESTDIR=$PKG install
