@@ -5,7 +5,7 @@
 # Depends on: libpthread-stubs xorg-libpciaccess 
 
 name=libdrm
-version=2.4.59
+version=2.4.60
 release=1
 source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2)
 
@@ -17,8 +17,12 @@ build() {
     --mandir=/usr/man \
     --disable-manpages \
     --disable-cairo-tests \
+    --disable-radeon \
+    --disable-nouveau \
+    --disable-vmwgfx \
     --enable-omap-experimental-api \
-    --enable-exynos-experimental-api
+    --enable-exynos-experimental-api \
+    --enable-tegra-experimental-api
 
   make
   make DESTDIR=$PKG install
