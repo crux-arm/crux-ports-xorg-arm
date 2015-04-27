@@ -2,7 +2,7 @@
 # URL: http://www.mesa3d.org
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
-# Depends on: elfutils expat libdrm libvdpau libxml2-python llvm talloc xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxt xorg-libxvmc xorg-libxxf86vm xorg-makedepend xorg-presentproto
+# Depends on: elfutils expat libdrm libvdpau llvm xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-presentproto
 
 name=mesa3d
 version=10.5.4
