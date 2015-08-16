@@ -5,7 +5,7 @@
 # Depends on: libpthread-stubs xorg-libpciaccess 
 
 name=libdrm
-version=2.4.62
+version=2.4.63
 release=1
 source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2)
 
@@ -21,6 +21,7 @@ build() {
     --disable-radeon \
     --disable-nouveau \
     --disable-vmwgfx \
+    --disable-amdgpu \
     --enable-omap-experimental-api \
     --enable-exynos-experimental-api \
     --enable-tegra-experimental-api
