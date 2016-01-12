@@ -5,7 +5,7 @@
 # Depends on: glew glu
 
 name=mesa-demos
-version=8.2.0
+version=8.3.0
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/demos/$version/$name-$version.tar.bz2)
 
@@ -15,7 +15,7 @@ build() {
   ./configure --prefix=/usr
 
   make -C src/xdemos/ glxinfo glxgears
-  make -C src/egl/eglut/ libeglut_screen.la libeglut_x11.la
+  make -C src/egl/eglut/
   make -C src/egl/opengles2/ es2_info es2gears_x11
 
   install -d $PKG/usr/bin
