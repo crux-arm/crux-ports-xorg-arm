@@ -2,16 +2,15 @@
 # URL: http://www.mesa3d.org
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
-# Depends on: elfutils expat libdrm libvdpau llvm xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-presentproto
+# Depends on: elfutils expat libdrm libvdpau llvm xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-presentproto xorg-libxxf86vm
 
 name=mesa3d
-version=10.6.9
+version=11.0.8
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/mesa-$version.tar.xz)
 
 build() {
   cd mesa-$version
-  autoreconf --force --install --symlink
 
   ./configure --prefix=/usr \
               --sysconfdir=/etc \
