@@ -18,6 +18,7 @@ build() {
     --disable-manpages \
     --disable-valgrind \
     --disable-cairo-tests \
+    --disable-intel \
     --disable-radeon \
     --disable-nouveau \
     --disable-vmwgfx \
