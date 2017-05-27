@@ -88,4 +88,3 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/glesv2.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/osmesa.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xatracker.pc
-drwxr-xr-x	root/root	usr/lib/vdpau/
