@@ -5,7 +5,7 @@
 # Depends on: elfutils expat libdrm libvdpau llvm xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-presentproto xorg-libxxf86vm
 
 name=mesa3d
-version=17.0.6
+version=17.1.1
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
@@ -14,7 +14,7 @@ build() {
 
   ./configure --prefix=/usr \
               --sysconfdir=/etc \
-              --disable-gallium-llvm \
+              --disable-llvm \
               --enable-gbm \
               --enable-gles1 \
               --enable-gles2 \
@@ -27,7 +27,7 @@ build() {
               --disable-dependency-tracking \
               --with-dri-drivers=swrast \
               --with-gallium-drivers=swrast,svga,freedreno \
-              --with-egl-platforms=x11,drm
+              --with-platforms=x11,drm
 
   make
   make DESTDIR=$PKG install
