@@ -5,7 +5,7 @@
 # Depends on: elfutils expat libdrm libvdpau llvm xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-presentproto xorg-libxxf86vm
 
 name=mesa3d
-version=17.1.9
+version=17.2.2
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/mesa-$version.tar.xz)
 
@@ -26,7 +26,7 @@ build() {
               --enable-llvm-shared-libs \
               --disable-dependency-tracking \
               --with-dri-drivers=swrast \
-              --with-gallium-drivers=swrast,svga,freedreno \
+              --with-gallium-drivers=swrast,freedreno \
               --with-platforms=x11,drm
 
   make
