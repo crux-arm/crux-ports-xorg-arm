@@ -1,0 +1,16 @@
+d:libdrm
+d:mesa
+d:xorg
+d:mesa-demos
+f:9b96440fae6c13eb3126c96b45254104:libdrm/.footprint
+f:79ed2d1d98b7c3db9fe882804a951425:libdrm/.signature
+f:b247fd5e0ae78568d466bd2843db9e88:libdrm/Pkgfile
+f:d3024db52fb014a4da217f381c72782e:mesa/.footprint
+f:ffe7294b1c8bab9704ae32dd3f9b4437:mesa/.signature
+f:ad4af8b6fa56832d2aaea02a9b6fedd3:mesa/Pkgfile
+f:ee14f7215a09f4a1f4335d8b18c1e559:xorg/.footprint
+f:a1a0fc71dca652b45d6fa32a37348bb3:xorg/.signature
+f:cfbde0317ec36a2dc657fb780cd78db3:xorg/Pkgfile
+f:b9a2b836272f0160cd4ee538975572f9:mesa-demos/.footprint
+f:95781be168b2ae51d46b0e60f620cdb4:mesa-demos/.signature
+f:3b590f0d104549e9b4ee052675367de1:mesa-demos/Pkgfile
