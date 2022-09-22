@@ -11,6 +11,6 @@ f:cc0e55b814c8cef36afe296cd0a34ebe:mesa/.signature
 f:3b590f0d104549e9b4ee052675367de1:mesa-demos/Pkgfile
 f:b9a2b836272f0160cd4ee538975572f9:mesa-demos/.footprint
 f:95781be168b2ae51d46b0e60f620cdb4:mesa-demos/.signature
-f:b247fd5e0ae78568d466bd2843db9e88:libdrm/Pkgfile
-f:9b96440fae6c13eb3126c96b45254104:libdrm/.footprint
-f:79ed2d1d98b7c3db9fe882804a951425:libdrm/.signature
+f:8f916c00f422d0302667247ef0ab6311:libdrm/Pkgfile
+f:c9498fa9cc2aaa9386becc26012b05ec:libdrm/.footprint
+f:f9d55a59a83ccf9edf4eb33208620d97:libdrm/.signature
