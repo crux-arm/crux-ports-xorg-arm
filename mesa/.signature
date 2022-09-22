@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/xorg-arm.pub
-RWSYHFoJug2wQlmdVuRxE2IKd9+1OBmqJ6bDYYH+dP/ZWd4k4eVdYTHOCoEJvQBx7HW0htHGJ3zfPVw8L8BUUkujM9YxtHgR8gU=
-SHA256 (Pkgfile) = 174eb09571951aa5fb4403c585e1f9c83a5339f60dfbe0aa275d353d036cfc34
+untrusted comment: verify with /etc/ports/odroidxu4-arm.pub
+RWSPE63IR0DK9C6qONX0etULqfiJ27+fm54ZIrXmrdufMdZOESLSfIBLz1JmY23+ZFTaeyF0w7Op+SHIi6SIvLxTvpWEmsrFNgY=
+SHA256 (Pkgfile) = 329ff94310ebf7fb111e628d27d119e7af4c148870b8791cc1802b402dfbd108
 SHA256 (.footprint) = 9977de33f6dd7b5bacee0a717de169c8b19b383d56d9e535d8b5efb816b5f41a
-SHA256 (mesa-22.1.6.tar.xz) = 22ced061eb9adab8ea35368246c1995c09723f3f71653cd5050c5cec376e671a
+SHA256 (mesa-22.1.7.tar.xz) = da838eb2cf11d0e08d0e9944f6bd4d96987fdc59ea2856f8c70a31a82b355d89
