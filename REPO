@@ -5,9 +5,10 @@ d:xorg
 f:3b590f0d104549e9b4ee052675367de1:mesa-demos/Pkgfile
 f:95781be168b2ae51d46b0e60f620cdb4:mesa-demos/.signature
 f:b9a2b836272f0160cd4ee538975572f9:mesa-demos/.footprint
-f:44be97d8f0849fb12fff76c3530dba29:mesa/Pkgfile
-f:cc0e55b814c8cef36afe296cd0a34ebe:mesa/.signature
-f:d3024db52fb014a4da217f381c72782e:mesa/.footprint
+f:0438aaa8b1fafb031e837791e9e1364e:mesa/U_clover-llvm-move-to-modern-pass-manager.patch
+f:025d07a2bd45c1b4330ff950a099e43d:mesa/Pkgfile
+f:f1ab3d3d459f11c67614c059fbdf41da:mesa/.signature
+f:bd0f951b0e15a66903dd352cec2f553e:mesa/.footprint
 f:c1dfefefaa9c0a930451a78819922120:libdrm/Pkgfile
 f:e2460306bc4613d865cc16ffeee336f7:libdrm/.signature
 f:3ca422ba04d026607212799abfc87c29:libdrm/.footprint
