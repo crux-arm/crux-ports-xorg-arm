@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/xorg-arm.pub
-RWSYHFoJug2wQhXygALT8LwTGbmCoNh35YFAVs24rXsHXGLbg8lnt2B4TwXfcV45XZjPmkfpPkeawUjBEgRLA804S8bjUt65zAI=
-SHA256 (Pkgfile) = e59f922f9c229a24f39600d1d89c61ebd2f43d9b53c3e08b69a6348622cb442c
-SHA256 (mesa-23.2.1.tar.xz) = 64de0616fc2d801f929ab1ac2a4f16b3e2783c4309a724c8a259b20df8bbc1cc
-SHA256 (U_clover-llvm-move-to-modern-pass-manager.patch) = 9174cd8a44d3841b2614e0386e212b0dfb56a6e26ea69c7c4415f77918d62f5d
+RWSYHFoJug2wQuUz7D0pr2hpxUx0Wl45Qd04GmuiuyDWDCl2ZiGFiL6GRoX1CU7aq3rOlqchZRyvGZN3JQaaUs/Kfw7LQiMEjws=
+SHA256 (Pkgfile) = 260a52dbc90cf7d5ff92bb49374c4e436f2c576c52b1fafd22f17ef4f9e9bda4
+SHA256 (.footprint) = f61478879411597cf3f1c4d9aecd5bff715ef27edcae3d1e31ba4f381f01c289
+SHA256 (mesa-23.3.0.tar.xz) = 50f729dd60ed6335b989095baad81ef5edf7cfdd4b4b48b9b955917cb07d69c5
