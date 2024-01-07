@@ -2,22 +2,28 @@
 # URL: http://www.mesa3d.org
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
-# Depends on: glew glu
+# Depends on: glew glu meson ninja
+# Optional: libdecor wayland
 
 name=mesa-demos
-version=8.5.0
+version=9.0.0
 release=1
-source=(https://archive.mesa3d.org/demos/$version/$name-$version.tar.bz2)
+source=(https://archive.mesa3d.org/demos/$name-$version.tar.xz)
 
 build() {
+  prt-get isinst libdecor wayland || PKGMK_MESA_DEMOS+=' -D wayland=disabled'
+
   meson setup build $name-$version \
     --prefix=/usr \
     --buildtype=plain \
-    --wrap-mode nodownload \
     -D b_lto=true \
     -D b_pie=true \
-    -D osmesa=disabled
+    -D osmesa=disabled \
+    -D gles1=disabled
+  
+#    --wrap-mode nodownload \
   meson compile -C build -j ${JOBS:-1}
+  
   install -d $PKG/usr/bin
 #  install -m 0755 -t $PKG/usr/bin src/{egl/opengles2/{es2_info,es2gears_x11},xdemos/glx{gears,info}}
 install -m 0755 -t $PKG/usr/bin build/src/xdemos/glx{gears,info}
