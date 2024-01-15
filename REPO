@@ -2,9 +2,9 @@ d:libdrm
 d:xorg
 d:mesa
 d:mesa-demos
-f:bd15e607f8874a5e483962bb6343468d:libdrm/Pkgfile
+f:2930a463bd57cf4865949550f6c29521:libdrm/Pkgfile
 f:3ca422ba04d026607212799abfc87c29:libdrm/.footprint
-f:80ec7a05fb974053d7c62e3ed1bb54b7:libdrm/.signature
+f:ddf32b08fe57d07dfd8869cdb6c435e6:libdrm/.signature
 f:cfbde0317ec36a2dc657fb780cd78db3:xorg/Pkgfile
 f:ee14f7215a09f4a1f4335d8b18c1e559:xorg/.footprint
 f:a1a0fc71dca652b45d6fa32a37348bb3:xorg/.signature
