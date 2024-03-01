@@ -13,5 +13,5 @@ f:cfbde0317ec36a2dc657fb780cd78db3:xorg/Pkgfile
 f:a1a0fc71dca652b45d6fa32a37348bb3:xorg/.signature
 f:95ae97ea3b2793c9a357fa46a4ed0148:mesa/.footprint
 f:0438aaa8b1fafb031e837791e9e1364e:mesa/U_clover-llvm-move-to-modern-pass-manager.patch
-f:c98cf0b8cbffb112781054d92b0ecec2:mesa/Pkgfile
-f:5bed82868abe00845f84f378c5cd906d:mesa/.signature
+f:3fada0fdca4c876decb43ed9c3ed1ce2:mesa/Pkgfile
+f:6f5001ca079a20c3cad960b1905c5ec7:mesa/.signature
