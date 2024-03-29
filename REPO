@@ -7,8 +7,8 @@ f:9711b5e207919a146f9f6d7c3599563e:mesa-demos/.signature
 f:6994c1a8a51a255d7ef8fbc344df9a67:mesa-demos/Pkgfile
 f:0438aaa8b1fafb031e837791e9e1364e:mesa/U_clover-llvm-move-to-modern-pass-manager.patch
 f:95ae97ea3b2793c9a357fa46a4ed0148:mesa/.footprint
-f:6153cd053e201b5e771ce606d494a4cc:mesa/.signature
-f:1627de68db352741c1cf5d66c0531ea3:mesa/Pkgfile
+f:014dac7b1f41ac31fdc63a06f955073e:mesa/.signature
+f:16cd3860df2eae02ed8bfb9e0262534e:mesa/Pkgfile
 f:3ca422ba04d026607212799abfc87c29:libdrm/.footprint
 f:ddf32b08fe57d07dfd8869cdb6c435e6:libdrm/.signature
 f:2930a463bd57cf4865949550f6c29521:libdrm/Pkgfile
