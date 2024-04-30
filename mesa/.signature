@@ -1,4 +1,4 @@
-untrusted comment: verify with /etc/ports/samsung-chromebook-arm.pub
-RWRTv10rCKEp5tapABRDwc4ASEwHUF1PwKa87g5RKGWXEYtrYY4MkvW6rT0kV6PqI9GHfy03gJeJgfR1J4w3HbfI1NhmMeAjHw0=
-SHA256 (Pkgfile) = 5b2b72a03f1aedbfa28288661d80e6f1fe1bc8339c1c596590574faf76c60f45
-SHA256 (mesa-24.0.5.tar.xz) = 38cc245ca8faa3c69da6d2687f8906377001f63365348a62cc6f7fafb1e8c018
+untrusted comment: verify with /etc/ports/xorg-arm.pub
+RWSYHFoJug2wQu17sErq/WKfQdXN6iaEAy2bo6GsIuuftfYR6lw5+RphGHmgch5yZU1HdFqdOu7Pk0I+kxzArvgXMpMLVIJn0Ak=
+SHA256 (Pkgfile) = 0c6138fc0f9855bbe3a34cde583ae1a68aa53f831e2060087c90c07cde402ef1
+SHA256 (mesa-24.0.6.tar.xz) = 8b7a92dbe6468c18f2383700135b5fe9de836cdf0cc8fd7dbae3c7110237d604
