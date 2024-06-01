@@ -36,10 +36,13 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/mxsfb-drm_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/panel-mipi-dbi_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/panfrost_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/panthor_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/pl111_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/rcar-du_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/repaper_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/rockchip_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/rzg2l-du_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/ssd130x_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/st7586_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/st7735r_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/sti_dri.so
@@ -50,6 +53,7 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/v3d_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/vc4_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/vmwgfx_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/zynqmp-dpsub_dri.so
 lrwxrwxrwx	root/root	usr/lib/libEGL_mesa.so -> libEGL_mesa.so.0
 lrwxrwxrwx	root/root	usr/lib/libEGL_mesa.so.0 -> libEGL_mesa.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libEGL_mesa.so.0.0.0
