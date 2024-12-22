@@ -6,12 +6,9 @@
 # Optional: cbindgen directx-headers glslang libclc libunwind libva libvdpau lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator wayland-protocols
 
 name=mesa
-version=24.3.1
-release=2
-source=(https://archive.mesa3d.org/$name-$version.tar.xz
-  0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
-  0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
-  0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch)
+version=24.3.2
+release=1
+source=(https://archive.mesa3d.org/$name-$version.tar.xz)
 
 build() {
 prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
@@ -30,10 +27,6 @@ prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
   PKGMK_MESA_PLATFORMS+=',x11'
 
   printf '%s' "$version-$release" > $name-$version/VERSION
-
-  patch -Np1 -d $name-$version -i $SRC/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
-  patch -Np1 -d $name-$version -i $SRC/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
-  patch -Np1 -d $name-$version -i $SRC/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
 
   meson setup build mesa-$version $PKGMK_MESA \
     --prefix=/usr \
