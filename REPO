@@ -13,8 +13,8 @@ f:cfbde0317ec36a2dc657fb780cd78db3:xorg/Pkgfile
 f:a1a0fc71dca652b45d6fa32a37348bb3:xorg/.signature
 f:7e1080546c514670fc44bf6998185490:mesa/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
 f:cf566dbb30c12b56c27e3b4ea3513037:mesa/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
-f:76662a0608f43db9e90862294f277a0c:mesa/.footprint
-f:0baa3535cb512449168d9d75dd334b1c:mesa/Pkgfile
+f:0d45222dbec22bde5b919ddd91adc578:mesa/.footprint
+f:39172ddd360502a5885acc4d0cff33a5:mesa/Pkgfile
 f:c9e9413519fc1715942c928ec8b19460:mesa/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
 f:0438aaa8b1fafb031e837791e9e1364e:mesa/U_clover-llvm-move-to-modern-pass-manager.patch
-f:7c70919753a8e540712475224bc94260:mesa/.signature
+f:245a9eb93a1f62c4ec696ac30cdbc84a:mesa/.signature
