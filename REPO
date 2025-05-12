@@ -3,12 +3,9 @@ d:libdrm
 d:mesa-demos
 d:xorg
 f:95b229a1e1d52def48365a0874328f48:mesa/Pkgfile
-f:7e1080546c514670fc44bf6998185490:mesa/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
 f:0438aaa8b1fafb031e837791e9e1364e:mesa/U_clover-llvm-move-to-modern-pass-manager.patch
 f:284cad5b26103a04e06bd6738ddce783:mesa/.signature
-f:c9e9413519fc1715942c928ec8b19460:mesa/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
 f:f6fd5d720031bb893645266f9dfffa90:mesa/.footprint
-f:cf566dbb30c12b56c27e3b4ea3513037:mesa/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
 f:8da308656a39006816da01ab87e4347b:libdrm/Pkgfile
 f:1a5748b84fad582c363567c766afa208:libdrm/.signature
 f:a944c7615130179f4e60ad7b65a015b3:libdrm/.footprint
