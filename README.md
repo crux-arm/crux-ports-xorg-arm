@@ -4,7 +4,7 @@ CRUX-ARM ports overlay for CRUX xorg collection
 
 To use these ports, download the `xorg-arm.httpup` file to `/etc/ports`:
 ```
-$ sudo wget -P /etc/ports https://raw.githubusercontent.com/crux-arm/crux-ports-xorg-arm/3.6/xorg-arm.httpup
+$ sudo wget -P /etc/ports https://raw.githubusercontent.com/crux-arm/crux-ports-xorg-arm/3.8/xorg-arm.httpup
 $ sudo ports -u xorg-arm
 ```
 
