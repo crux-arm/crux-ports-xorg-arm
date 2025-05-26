@@ -23,6 +23,6 @@ build() {
   make
   make DESTDIR=$PKG install
   mkdir -p $PKG//etc/X11/xorg.conf.d/
-  install -m0755 $SRC/$name/xorg.conf $PKG/etc/X11/xorg.conf.d/80-armsoc.conf
+  install -m0644 $SRC/$name/xorg.conf $PKG/etc/X11/xorg.conf.d/80-armsoc.conf
   sed "s|Allwinner sun4i|ARM graphics|g" -i $PKG/etc/X11/xorg.conf.d/80-armsoc.conf
 }
