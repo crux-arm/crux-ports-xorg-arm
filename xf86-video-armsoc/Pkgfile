@@ -1,0 +1,25 @@
+# Description: 
+# URL: https://github.com/mripard/xf86-video-armsoc/
+# Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: xorg
+
+name=xf86-video-armsoc
+version=git
+release=1
+source=()
+
+build() {
+  if [ ! -d $PKGMK_SOURCE_DIR/$name ]; then
+    git clone https://github.com/mripard/$name.git $PKGMK_SOURCE_DIR/$name
+  else
+    cd $PKGMK_SOURCE_DIR/$name && git fetch
+  fi
+  cp -r $PKGMK_SOURCE_DIR/$name $SRC
+
+  cd $SRC/$name
+  autoreconf -vi
+  ./configure --prefix=/usr --mandir=/usr/man
+  make
+  make DESTDIR=$PKG install
+}
