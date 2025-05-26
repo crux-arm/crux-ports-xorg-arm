@@ -3,6 +3,7 @@ d:mesa-demos
 d:mesa
 d:xorg
 d:libdrm
+d:xf86-video-fbturbo
 f:c1b52a15928a88929e9d3fa36ffe59ef:xf86-video-armsoc/.footprint
 f:5a3d4b16a88a5d2c9d43182c39ad1185:xf86-video-armsoc/Pkgfile
 f:f6e4bca8c3ae9e00982250e678ff98c8:xf86-video-armsoc/.signature
@@ -18,3 +19,10 @@ f:843a25c71ebd043a87c2b7368801dcb7:xorg/.signature
 f:a944c7615130179f4e60ad7b65a015b3:libdrm/.footprint
 f:8da308656a39006816da01ab87e4347b:libdrm/Pkgfile
 f:1a5748b84fad582c363567c766afa208:libdrm/.signature
+f:5f4706b8c2163f66dc9f99ef9a93c500:xf86-video-fbturbo/.footprint
+f:c6bf86bda174e0d37c75294518909b76:xf86-video-fbturbo/0001-Use-own-thunk-functions-instead-of-fbdevHW-Weak.patch
+f:d6029234c5c79ff3d4323c8a50e746e6:xf86-video-fbturbo/0004-fbdev_xrand.patch
+f:f8ee21eaee681b41a4eb50cb5896b847:xf86-video-fbturbo/0003-backStorage-fix.patch
+f:b12164021cf4a7892b5e4de23e1127c6:xf86-video-fbturbo/Pkgfile
+f:36ff3a90c4c17bbfb982d53bfd411936:xf86-video-fbturbo/0002-GCC-8-fix.patch
+f:6887ae982af49fa1ea482920999bba5b:xf86-video-fbturbo/.signature
