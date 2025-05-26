@@ -1,7 +1,11 @@
+d:xf86-video-armsoc
 d:mesa-demos
 d:mesa
 d:xorg
 d:libdrm
+f:82515b9e4db5147e3cb0ba25c9312857:xf86-video-armsoc/.footprint
+f:3f10e5f53d76d0d971b571ef0e47e9d5:xf86-video-armsoc/Pkgfile
+f:cfe925dbd3b6f1cff9b495e5d23cf95e:xf86-video-armsoc/.signature
 f:b9a2b836272f0160cd4ee538975572f9:mesa-demos/.footprint
 f:6994c1a8a51a255d7ef8fbc344df9a67:mesa-demos/Pkgfile
 f:9711b5e207919a146f9f6d7c3599563e:mesa-demos/.signature
