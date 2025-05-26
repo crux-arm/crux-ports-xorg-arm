@@ -4,9 +4,9 @@ d:mesa
 d:xorg
 d:libdrm
 d:xf86-video-fbturbo
-f:c1b52a15928a88929e9d3fa36ffe59ef:xf86-video-armsoc/.footprint
-f:5a3d4b16a88a5d2c9d43182c39ad1185:xf86-video-armsoc/Pkgfile
-f:f6e4bca8c3ae9e00982250e678ff98c8:xf86-video-armsoc/.signature
+f:8e8b2123c659a3a45f51771b117e138a:xf86-video-armsoc/.footprint
+f:73d5ce5df91406256776d283df79c31f:xf86-video-armsoc/Pkgfile
+f:2e91330cd87992bc4894edf5691e3aad:xf86-video-armsoc/.signature
 f:b9a2b836272f0160cd4ee538975572f9:mesa-demos/.footprint
 f:6994c1a8a51a255d7ef8fbc344df9a67:mesa-demos/Pkgfile
 f:9711b5e207919a146f9f6d7c3599563e:mesa-demos/.signature
