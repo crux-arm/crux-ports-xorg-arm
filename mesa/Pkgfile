@@ -2,16 +2,16 @@
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, at crux-arm devel dot nu
-# Depends on: elfutils libdrm libglvnd llvm python3-mako python3-pyyaml python3-pycparser xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
+# Depends on:  elfutils glslang libclc libdrm libglvnd python3-mako python3-pycparser python3-pyyaml xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
 # Optional: cbindgen directx-headers glslang libclc libunwind libva libvdpau lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator wayland-protocols
 
 name=mesa
-version=25.0.6
+version=25.1.3
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz)
 
 build() {
-prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
+  prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
   prt-get isinst libclc spirv-llvm-translator && PKGMK_MESA+=' -D gallium-opencl=icd'
   prt-get isinst libclc rust-bindgen spirv-llvm-translator && PKGMK_MESA+=' -D gallium-rusticl=true'
   prt-get isinst glslang python3-ply && PKGMK_MESA+=' -D vulkan-drivers=auto -D vulkan-layers=device-select,intel-nullhw,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
@@ -44,7 +44,7 @@ prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
     -D glx=dri \
     -D osmesa=true \
     -D gallium-xa=disabled \
-    -D gallium-drivers=${PKGMK_MESA_GALLIUM}etnaviv,lima,panfrost,svga,v3d,vc4,swrast \
+    -D gallium-drivers=${PKGMK_MESA_GALLIUM}etnaviv,lima,panfrost,svga,v3d,vc4 \
     -D platforms=${PKGMK_MESA_PLATFORMS#,} \
     -D shared-glapi=enabled \
     -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
