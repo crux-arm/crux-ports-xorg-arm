@@ -7,9 +7,9 @@ d:libdrm
 f:9711b5e207919a146f9f6d7c3599563e:mesa-demos/.signature
 f:b9a2b836272f0160cd4ee538975572f9:mesa-demos/.footprint
 f:6994c1a8a51a255d7ef8fbc344df9a67:mesa-demos/Pkgfile
-f:a7462e5b832f1cf7e2ef149c971980e1:mesa/.signature
-f:0dfeadbc36b6c283cad89ba73369f3b7:mesa/.footprint
-f:0a04c695d536a693f857a941c2e12ed1:mesa/Pkgfile
+f:2ddc04ce1b5ee4ab631d7ce3716bc181:mesa/.signature
+f:1542462a7a852240308d9f68cc6f062a:mesa/.footprint
+f:5171c48db49ca40044338f2987736494:mesa/Pkgfile
 f:2e91330cd87992bc4894edf5691e3aad:xf86-video-armsoc/.signature
 f:8e8b2123c659a3a45f51771b117e138a:xf86-video-armsoc/.footprint
 f:73d5ce5df91406256776d283df79c31f:xf86-video-armsoc/Pkgfile
